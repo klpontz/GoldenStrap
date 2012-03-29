@@ -1,0 +1,555 @@
+/*   
+Theme Name: GoldenStrap
+Theme URI: http://example.co m/example/
+Description: A WordPress theme built with Lavish and Bootstrap!! I know! Awesome right!
+Author: Kevin @ bbwd
+Author URI: http://brownbagwebdesign.com/
+Version: 1.0
+.
+Your theme will be your copyrighted work.
+Like WordPress, this work is released under GNU General Public License, version 2 (GPL).
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+.
+*/
+
+
+// GLOBAL VALUES - Import from Lavish Style
+// _______________________________________________________________________________ \\
+
+// Links
+@linkColor:             		#96623E;
+@linkColorHover:        		darken(@linkColor, 15%);
+
+// Grays
+@black:                 		#4E3828;
+@grayDark:              		#595B64; 
+@grayDarker:            		darken(@grayDark, 10%);
+@gray:                  		#8D807D;
+@grayLight:             		#BCBBB4;
+@grayLighter:           		#ACBAC7;
+@white:                 		#B9C4C9;
+
+// Accent colors
+@blue:                  		#049cdb;
+@blueDark:              		#0064cd;
+@green:                 		#46a546;
+@red:                   		#9d261d;
+@yellow:                		#ffc40d;
+@orange:                		#F2693E;
+@pink:                 	 		#c3325f;
+@purple:                		#7a43b6;
+
+// Typography
+@baseFontSize:          		13px;
+@baseFontFamily:        		"Helvetica Neue", Helvetica, Arial, sans-serif;
+@baseLineHeight:        		18px;
+@textColor:             		@blackest;
+
+// Buttons
+@primaryButtonBackground:    	@gray;
+
+//Footer
+@footText:           			@grayLight;
+@footLinkColor:					@grayLight;
+@footLinkColorHover:			@white;
+
+// Form states and alerts
+@warningText:             #c09853;
+@warningBackground:       #fcf8e3;
+@warningBorder:           darken(spin(@warningBackground, -10), 3%);
+
+@errorText:               #b94a48;
+@errorBackground:         #f2dede;
+@errorBorder:             darken(spin(@errorBackground, -10), 3%);
+
+@successText:             #468847;
+@successBackground:       #dff0d8;
+@successBorder:           darken(spin(@successBackground, -10), 5%);
+
+@infoText:                #3a87ad;
+@infoBackground:          #d9edf7;
+@infoBorder:              darken(spin(@infoBackground, -10), 7%);
+
+
+// ADDITIONAL GLOBAL VALUES 
+// _______________________________________________________________________________ \\
+
+// Add. Grays
+@blackest:						darken(@black, 10%);
+@whiter:						lighten(@white, 10%);
+@whitest: 						lighten(@whiter, 10%);
+
+// Navbar
+@navbarHeight:                  40px;
+@navbarBackground:              @grayDarker;
+@navbarBackgroundHighlight:     @grayDark;
+
+@navbarText:                	@grayLight;
+@navbarLinkColor:           	@grayLight;
+@navbarLinkColorHover:			@orange;
+
+// Footer Background
+@footBackgroundHighlight:		@gray;
+@footBackground: 				@grayDarker;
+
+// CSS3 PROPERTIES
+// _______________________________________________________________________________ \\
+
+// Border Radius
+.border-radius(@radius: 5px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+// BODY TEXT
+// _______________________________________________________________________________ \\
+body {
+  margin-top: 58px;
+}
+p {
+ color:@textColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ color:@textColor;
+}
+
+address {
+ color:@textColor;
+}
+
+// NAVBAR
+// _______________________________________________________________________________ \\
+
+/* Tweak navbar brand link to be super sleek
+-------------------------------------------------- */
+.navbar .brand {
+  padding-right: 30px;
+  padding-left: 0;
+  float: left;
+  font-weight: bold;
+  color: @blackest;
+  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+          transition: all .2s linear;
+}
+.navbar-fixed-top .brand:hover {
+  text-decoration: none;
+}
+
+/* Tweak Navbar for WordPress' Classes
+-------------------------------------------------- */
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+}
+.navbar .navbar-fixed-top {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;  
+  margin-bottom: 18px;
+}
+.navbar .nav.pull-right {
+  float: right; // redeclare due to specificity
+}
+.navbar .nav > li {
+  display: block;
+  float: left;
+}
+.navbar ul li {
+  display: inline;
+  line-height: 19px;
+}
+// Links
+.navbar .nav > li > a {
+  float: none;
+  padding: 10px 10px 11px;
+  line-height: 19px;
+  color: @navbarLinkColor;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+}
+// Hover
+.navbar .nav > li > a:hover {
+  background-color: transparent;
+  color: @navbarLinkColorHover;
+  text-decoration: none;
+}
+
+// Active nav items
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover {
+  color: @navbarLinkColorHover;
+  text-decoration: none;
+  background-color: @navbarBackground;
+  background-color: rgba(0,0,0,.5);
+}
+
+// Links for WordPress classes
+.current_page_item {
+  margin-left: 0;
+  list-style: none;
+}
+.page_item {
+  list-style: none;
+}
+
+.navbar .page_item a {
+  color: @grayLight;
+  float: none;
+  padding: 13px 10px 13px;
+  line-height: 19px;
+  color: @navbarLinkColor;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+}
+.navbar .current_page_item a {
+  color: @white;
+  padding: 13px 10px 13px;
+  line-height: 19px;
+  color: @navbarLinkColor;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+  background-color: @navbarBackground;
+  background-color: rgba(0,0,0,.5);
+}
+// Hover for WordPress
+.navbar .page_item > a:hover {
+  background-color: transparent;
+  color: @navbarLinkColorHover;
+  text-decoration: none;
+}
+// Active nav items for WordPress
+.navbar .current_page_item > a,
+.navbar .nav .current_page_item > a:hover {
+  color: @orange;
+  text-decoration: none;
+  background-color: @navbarBackground;
+  background-color: rgba(0,0,0,.5);
+}
+
+// BUTTONS
+// _______________________________________________________________________________ \\
+// Mixin for generating button backgrounds
+// ---------------------------------------
+.buttonBackground(@startColor, @endColor) {
+  // gradientBar will set the background to a pleasing blend of these, to support IE<=9
+  .gradientBar(@startColor, @endColor);
+  .reset-filter();
+
+  // in these cases the gradient won't cover the background, so we override
+  &:hover, &:active, &.active, &.disabled, &[disabled] {
+    background-color: @endColor;
+  }
+
+  // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
+  &:active,
+  &.active {
+    background-color: darken(@endColor, 10%) e("\9");
+  }
+}
+.btn {
+  color: @textColor;
+}
+.btn:hover {
+  color: @orange;
+  text-shadow: 0 -1px 0 @textColor, 0 0 2px @textColor;
+    -webkit-transition: all .2s linear;
+	  -moz-transition: all .2s linear;
+	    transition: all .2s linear;  
+}
+.btn-primary,
+.btn-warning,
+.btn-danger,
+.btn-success, 
+.btn-info {
+	color: @whitest;
+	background-color:@white;
+}
+.btn-primary:hover,
+.btn-warning:hover,
+.btn-danger:hover,
+.btn-success:hover, 
+.btn-info:hover {
+	color: @orange;
+}
+
+// ALERT MESSAGES
+// _______________________________________________________________________________ \\
+// Base alert styles
+.wpcf7-response-output {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: @baseLineHeight;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  background-color: @warningBackground;
+  border: 1px solid @warningBorder;
+  .border-radius(4px);
+}
+.wpcf7-response-output,
+.alert-heading {
+  color: @warningText;
+}
+
+// Adjust close link position
+.wpcf7-response-output .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 18px;
+}
+
+// Alternate styles
+// ----------------
+
+.wpcf7-mail-sent-ok, {
+  background-color: @successBackground;
+  border-color: @successBorder;  
+  width: 404px;
+  font-size: 17px;
+  line-height: 1.2em;
+}
+.wpcf7-mail-sent-ok,
+.alert-success .alert-heading {
+  color: @successText;
+}
+.alert-danger,
+.wpcf7-validation-errors,
+.wpcf7-not-valid-tip,
+.wpcf7-mail-sent-ng {
+  background-color: @errorBackground;
+  border-color: @errorBorder;
+  margin-left: 23px;
+  font-size: 17px;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  line-height: 1.2em;
+  width: 404px;
+  .border-radius(4px);
+}
+.alert-danger,
+.wpcf7-validation-errors,
+.wpcf7-not-valid-tip,
+.wpcf7-mail-sent-ng,
+.alert-danger .alert-heading,
+.alert-error .alert-heading {
+  color: @errorText;
+}
+.alert-info {
+  background-color: @infoBackground;
+  border-color: @infoBorder;
+}
+.alert-info,
+.alert-info .alert-heading {
+  color: @infoText;
+}
+
+
+// Block alerts
+// ------------------------
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+.alert-block p + p {
+  margin-top: 5px;
+}
+
+// HERO UNIT
+// _______________________________________________________________________________ \\
+.hero-unit { 
+  height:380px;
+  background-image:url('/sfie/wp-content/themes/goldenstrap/img/ggb.jpg');
+  text-align:right;
+  
+  h1 {
+  font-weight: bold;
+  font-size: 51px;
+  color: @blackest;
+  text-shadow: 0 -1px 0 @white, 0 0 2px @white;
+    -webkit-transition: all .2s linear;
+       -moz-transition: all .2s linear;
+            transition: all .2s linear;
+  }
+}
+
+// JUMBOTRON
+// _______________________________________________________________________________ \\
+.jumbotron {
+  background-image:url('/sfie/wp-content/themes/goldenstrap/img/ggb.jpg');
+  text-align:right;
+  padding:30px;
+  margin-top: 25px;
+  margin-bottom: 32px;
+  .border-radius(6px);
+
+  h1 {
+  font-weight: bold;
+  font-size: 51px;
+  color: @blackest;
+  text-shadow: 0 -1px 0 @white, 0 0 2px @white;
+    -webkit-transition: all .2s linear;
+       -moz-transition: all .2s linear;
+            transition: all .2s linear;
+  }
+}
+
+// ACCORDIAN
+// _______________________________________________________________________________ \\
+.accordion-inner {
+  li {
+    line-height: 27px;
+  }
+}
+.accordion-heading {
+  padding: 10px;
+  font-weight: light;
+  font-size: 36px;
+  text-shadow: 0 -1px 0 @white, 0 0 2px @white;
+    -webkit-transition: all .2s linear;
+	   -moz-transition: all .2s linear;
+     		transition: all .2s linear;
+  a {
+    text-decoration:none;
+	color: @textColor;
+  }
+  a:hover {
+	color: @orange;
+	text-shadow: 0 -1px 0 @textColor, 0 0 2px @textColor;
+	    -webkit-transition: all .2s linear;
+		   -moz-transition: all .2s linear;
+	     		transition: all .2s linear;
+  }
+}
+
+//Add Padding to Thumbnails on Classes Page
+.teachers {
+  padding: 71px;
+}
+.schedule {
+  padding: 22px 70px;
+}
+
+// FOOTER
+// _______________________________________________________________________________ \\
+.foot {
+  padding:20px;
+  position: relative;
+  left: 0;
+  display: block;
+  margin: 104px 0 0 0;
+  border-top: 4px solid lighten(@orange, 6%);
+  background-color: #4f5159;
+  background-image: -moz-linear-gradient(top, #595b64, #414249);
+  background-image: -ms-linear-gradient(top, #595b64, #414249);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#595b64), to(#414249));
+  background-image: -webkit-linear-gradient(top, #595b64, #414249);
+  background-image: -o-linear-gradient(top, #595b64, #414249);
+  background-image: linear-gradient(top, #595b64, #414249);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595b64', endColorstr='#414249', GradientType=0);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  p {
+    margin-bottom: 0px;
+  }
+  address {
+	color: @grayLighter;
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 27px;
+ }
+}
+
+.foot > li {
+  display: block;
+  float: left;
+}
+
+// Links
+.foot > li > a {
+  float: none;
+  padding: 10px 10px 11px;
+  line-height: 19px;
+  color: @footLinkColor;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+}
+// Hover
+.foot > li > a:hover {
+  background-color: transparent;
+  color: @footLinkColorHover;
+  text-decoration: none;
+}
+
+.applyBtn {
+  font-size: 36px;
+  padding: 21px;
+}
+
+// CONTACT FORM
+// _______________________________________________________________________________ \\
+.contact {
+  padding: 33px 0px 0px 33px;
+  margin-left:0px;
+}
+p#contactMessage {
+  font-size:21px;
+  width:464px;
+  line-height:l.2em;
+}
+.row .content .contact .well {
+  margin-left:0px;
+}
+input, textarea, select, .uneditable-input {
+  padding: 12px;
+  width: 424px;
+}
+.watermark {
+  color: @gray;
+  font-size: 21px;
+  line-height: 1.5em;
+}
+.wpcf7-submit {
+  font-size: 20px;
+  text-color: @white;
+  padding: 16px;
+}
+.wpcf7-quiz-label {
+  display:block;
+  font-size: 20px;
+  padding-bottom:16px;
+}
+span.wpcf7-quiz-label {
+  color: @gray;
+}
+address#contact {
+	font-size:1.3em;
+}
+
+// THUMBNAILS
+// _______________________________________________________________________________ \\
+.thumbnail {
+	width:316px;
+}
+// MISC.
+// _______________________________________________________________________________ \\
+
+// // Faded out hr 
+hr.soften {
+  height: 1px;
+  margin: 54px 0;
+  border: 0;
+  background-image: 
+	-webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0)),
+	   -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0)),
+	    -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0)),
+	     -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+}

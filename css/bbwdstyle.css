@@ -1,0 +1,389 @@
+/*   
+Theme Name: GoldenStrap
+Theme URI: http://example.co m/example/
+Description: A WordPress theme built with Lavish and Bootstrap!! I know! Awesome right!
+Author: Kevin @ bbwd
+Author URI: http://brownbagwebdesign.com/
+Version: 1.0
+.
+Your theme will be your copyrighted work.
+Like WordPress, this work is released under GNU General Public License, version 2 (GPL).
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+.
+*/
+body {
+  margin-top: 58px;
+}
+p {
+  color: #2c2017;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2c2017;
+}
+address {
+  color: #2c2017;
+}
+/* Tweak navbar brand link to be super sleek
+-------------------------------------------------- */
+.navbar .brand {
+  padding-right: 30px;
+  padding-left: 0;
+  float: left;
+  font-weight: bold;
+  color: #2c2017;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.navbar-fixed-top .brand:hover {
+  text-decoration: none;
+}
+/* Tweak Navbar for WordPress' Classes
+-------------------------------------------------- */
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+}
+.navbar .navbar-fixed-top {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin-bottom: 18px;
+}
+.navbar .nav.pull-right {
+  float: right;
+}
+.navbar .nav > li {
+  display: block;
+  float: left;
+}
+.navbar ul li {
+  display: inline;
+  line-height: 19px;
+}
+.navbar .nav > li > a {
+  float: none;
+  padding: 10px 10px 11px;
+  line-height: 19px;
+  color: #bcbbb4;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar .nav > li > a:hover {
+  background-color: transparent;
+  color: #f2693e;
+  text-decoration: none;
+}
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover {
+  color: #f2693e;
+  text-decoration: none;
+  background-color: #414249;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.current_page_item {
+  margin-left: 0;
+  list-style: none;
+}
+.page_item {
+  list-style: none;
+}
+.navbar .page_item a {
+  color: #bcbbb4;
+  float: none;
+  padding: 13px 10px 13px;
+  line-height: 19px;
+  color: #bcbbb4;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar .current_page_item a {
+  color: #b9c4c9;
+  padding: 13px 10px 13px;
+  line-height: 19px;
+  color: #bcbbb4;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #414249;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.navbar .page_item > a:hover {
+  background-color: transparent;
+  color: #f2693e;
+  text-decoration: none;
+}
+.navbar .current_page_item > a,
+.navbar .nav .current_page_item > a:hover {
+  color: #f2693e;
+  text-decoration: none;
+  background-color: #414249;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.btn {
+  color: #2c2017;
+}
+.btn:hover {
+  color: #f2693e;
+  text-shadow: 0 -1px 0 #2c2017, 0 0 2px #2c2017;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.btn-primary,
+.btn-warning,
+.btn-danger,
+.btn-success,
+.btn-info {
+  color: #f3f5f5;
+  background-color: #b9c4c9;
+}
+.btn-primary:hover,
+.btn-warning:hover,
+.btn-danger:hover,
+.btn-success:hover,
+.btn-info:hover {
+  color: #f2693e;
+}
+.wpcf7-response-output {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.wpcf7-response-output,
+.alert-heading {
+  color: #c09853;
+}
+.wpcf7-response-output .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 18px;
+}
+.wpcf7-mail-sent-ok {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  width: 404px;
+  font-size: 17px;
+  line-height: 1.2em;
+}
+.wpcf7-mail-sent-ok,
+.alert-success .alert-heading {
+  color: #468847;
+}
+.alert-danger,
+.wpcf7-validation-errors,
+.wpcf7-not-valid-tip,
+.wpcf7-mail-sent-ng {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  margin-left: 23px;
+  font-size: 17px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  line-height: 1.2em;
+  width: 404px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.alert-danger,
+.wpcf7-validation-errors,
+.wpcf7-not-valid-tip,
+.wpcf7-mail-sent-ng,
+.alert-danger .alert-heading,
+.alert-error .alert-heading {
+  color: #b94a48;
+}
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert-info,
+.alert-info .alert-heading {
+  color: #3a87ad;
+}
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+.alert-block p + p {
+  margin-top: 5px;
+}
+.hero-unit {
+  height: 380px;
+  background-image: url('/sfie/wp-content/themes/goldenstrap/img/ggb.jpg');
+  text-align: right;
+}
+.hero-unit h1 {
+  font-weight: bold;
+  font-size: 51px;
+  color: #2c2017;
+  text-shadow: 0 -1px 0 #b9c4c9, 0 0 2px #b9c4c9;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.jumbotron {
+  background-image: url('/sfie/wp-content/themes/goldenstrap/img/ggb.jpg');
+  text-align: right;
+  padding: 30px;
+  margin-top: 25px;
+  margin-bottom: 32px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.jumbotron h1 {
+  font-weight: bold;
+  font-size: 51px;
+  color: #2c2017;
+  text-shadow: 0 -1px 0 #b9c4c9, 0 0 2px #b9c4c9;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.accordion-inner li {
+  line-height: 27px;
+}
+.accordion-heading {
+  padding: 10px;
+  font-weight: light;
+  font-size: 36px;
+  text-shadow: 0 -1px 0 #b9c4c9, 0 0 2px #b9c4c9;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.accordion-heading a {
+  text-decoration: none;
+  color: #2c2017;
+}
+.accordion-heading a:hover {
+  color: #f2693e;
+  text-shadow: 0 -1px 0 #2c2017, 0 0 2px #2c2017;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.teachers {
+  padding: 71px;
+}
+.schedule {
+  padding: 22px 70px;
+}
+.foot {
+  padding: 20px;
+  position: relative;
+  left: 0;
+  display: block;
+  margin: 104px 0 0 0;
+  border-top: 4px solid #f47f5b;
+  background-color: #4f5159;
+  background-image: -moz-linear-gradient(top, #595b64, #414249);
+  background-image: -ms-linear-gradient(top, #595b64, #414249);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#595b64), to(#414249));
+  background-image: -webkit-linear-gradient(top, #595b64, #414249);
+  background-image: -o-linear-gradient(top, #595b64, #414249);
+  background-image: linear-gradient(top, #595b64, #414249);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#595b64', endColorstr='#414249', GradientType=0);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+.foot p {
+  margin-bottom: 0px;
+}
+.foot address {
+  color: #acbac7;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 27px;
+}
+.foot > li {
+  display: block;
+  float: left;
+}
+.foot > li > a {
+  float: none;
+  padding: 10px 10px 11px;
+  line-height: 19px;
+  color: #bcbbb4;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.foot > li > a:hover {
+  background-color: transparent;
+  color: #b9c4c9;
+  text-decoration: none;
+}
+.applyBtn {
+  font-size: 36px;
+  padding: 21px;
+}
+.contact {
+  padding: 33px 0px 0px 33px;
+  margin-left: 0px;
+}
+p#contactMessage {
+  font-size: 21px;
+  width: 464px;
+  line-height: l.2em;
+}
+.row .content .contact .well {
+  margin-left: 0px;
+}
+input,
+textarea,
+select,
+.uneditable-input {
+  padding: 12px;
+  width: 424px;
+}
+.watermark {
+  color: #8d807d;
+  font-size: 21px;
+  line-height: 1.5em;
+}
+.wpcf7-submit {
+  font-size: 20px;
+  text-color: #b9c4c9;
+  padding: 16px;
+}
+.wpcf7-quiz-label {
+  display: block;
+  font-size: 20px;
+  padding-bottom: 16px;
+}
+span.wpcf7-quiz-label {
+  color: #8d807d;
+}
+address#contact {
+  font-size: 1.3em;
+}
+.thumbnail {
+  width: 316px;
+}
+hr.soften {
+  height: 1px;
+  margin: 54px 0;
+  border: 0;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+}
