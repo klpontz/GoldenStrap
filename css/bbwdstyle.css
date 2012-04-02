@@ -377,6 +377,15 @@ span.wpcf7-quiz-label {
 address#contact {
   font-size: 1.3em;
 }
+#app_form {
+  margin-left: 0px;
+  padding: 60px 80px 60px 80px;
+  float: left;
+}
+.app_help {
+  font-size: 1.2em;
+  width: 400px;
+}
 .thumbnail {
   width: 316px;
 }
