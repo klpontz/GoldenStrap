@@ -22,6 +22,8 @@ jQuery(document).ready(function () {
 */
 
 // Activate Tooltip
+/*
 jQuery(document).ready(function () {
 	jQuery('#csc').tooltip();
 });
+*/
