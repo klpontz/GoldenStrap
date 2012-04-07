@@ -331,6 +331,13 @@ address {
   font-size: 36px;
   padding: 21px;
 }
+a#login {
+  color: #2c2017;
+}
+a#login:hover {
+  color: #bcbbb4;
+  text-decoration: none;
+}
 .contact {
   padding: 33px 0px 0px 33px;
   margin-left: 0px;

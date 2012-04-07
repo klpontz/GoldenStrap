@@ -21,7 +21,7 @@
 				San Francisco, CA 94121<br>
 				Phone: (415) 750-1755<br>
 				Fax: (415) 750-9939<br>
-				Email:  info(at)sfie.net</a>
+				Email:  info@sfie.net</a>
 		     </address>
 		   </div><!-- span -->
 		   <div class="span1 offset4">
@@ -37,7 +37,7 @@
 		     <p>&#169; San Francisco Institute of English | Designed by BBWD</p>
 		   </div>
 		   <div class="span2">
- 			 <a href="/sfie/wp-login.php">Login</a>
+ 			 <a id="login" href="/sfie/wp-login.php">Login</a>
 		   </div>
 		  </div><!-- row -->
 		
