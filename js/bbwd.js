@@ -21,5 +21,7 @@ jQuery(document).ready(function () {
 });
 */
 
-//Stop the Application from from moving
-jQuery('#application').carousel();
+// Activate Tooltip
+jQuery(document).ready(function () {
+	jQuery('#csc').tooltip();
+});
