@@ -24,11 +24,9 @@
 				Email:  info(at)sfie.net</a>
 		     </address>
 		   </div><!-- span -->
-
 		   <div class="span1 offset4">
-		     <a href="http://www.facebook.com/pages/San-Francisco-Institute-of-English/314325297056" target="_blank"><img class="socicon" src="http://localhost/sfie/wp-content/themes/goldenstrap/img/facebook.png" width="64px" height="64px" alt="Facebook Icon"></img></a>
+		     <a href="http://www.facebook.com/pages/San-Francisco-Institute-of-English/314325297056" target="_blank"><img class="socicon" src="wp-content/themes/goldenstrap/img/facebook.png" width="64px" height="64px" alt="Facebook Icon"></img></a>
 		   </div><!-- span -->
-
 		   <div class="span3">
 		     <a class="btn applyBtn">Apply Now</a>
 		   </div><!-- span -->
