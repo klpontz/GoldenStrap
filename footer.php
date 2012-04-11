@@ -33,11 +33,11 @@
 	     </div><!-- row -->
 	
 		 <div class="row">
+ 		   <div class="span2">
+  			 <a id="login" href="/sfie/wp-login.php">Login</a>
+ 		   </div> 
 		   <div class="span11">
 		     <p>&#169; San Francisco Institute of English | Designed by BBWD</p>
-		   </div>
-		   <div class="span2">
- 			 <a id="login" href="/sfie/wp-login.php">Login</a>
 		   </div>
 		  </div><!-- row -->
 		
