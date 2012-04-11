@@ -339,8 +339,11 @@ a#login:hover {
   text-decoration: none;
 }
 .contact {
-  padding: 33px 0px 0px 33px;
+  padding: 0px 0px 0px 28px;
   margin-left: 0px;
+}
+.contactMessage {
+  padding: 33px 0px 0px 60px;
 }
 p#contactMessage {
   font-size: 21px;
