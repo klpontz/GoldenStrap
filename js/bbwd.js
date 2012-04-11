@@ -1,16 +1,12 @@
 // Change Nav Position for WP Admin Nav
 jQuery(document).ready(function () {
   	var target = document.getElementById('wpadminbar');
-
-	if (target == undefined) 
-	  {
-
+	if (target == undefined) {
 	  } else {
 		jQuery(".navbar").css("margin-top","28px");
 	}
 });
 
-// Animate Hover Over Color Change
 /*
 jQuery(document).ready(function () {
   jQuery(".accordion-heading a").mouseover(function() {	
