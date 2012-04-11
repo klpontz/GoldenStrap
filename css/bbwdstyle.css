@@ -391,6 +391,9 @@ address#contact {
   margin-top: -15px;
   margin-left: 45px;
 }
+select {
+  background-color: #f3f5f5;
+}
 .sidebar {
   width: 316px;
 }
