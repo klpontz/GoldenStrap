@@ -398,7 +398,7 @@ select {
   background-color: #f3f5f5;
 }
 .sidebar {
-  width: 316px;
+  width: 100%;
 }
 .teachers {
   padding: 71px;
