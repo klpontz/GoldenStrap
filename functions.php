@@ -32,6 +32,7 @@ load_theme_textdomain('bootstrapwp');
     wp_enqueue_style('docs', get_template_directory_uri().'/css/docs.css', false ,'1.0', 'all' );
     wp_enqueue_style('prettify', get_template_directory_uri().'/css/prettify.css', false ,'1.0', 'all' );
     wp_enqueue_style('lavish', get_template_directory_uri().'/css/lavish.css', false ,'1.0', 'all' );
+    wp_enqueue_style('datepicker', get_template_directory_uri().'/css/datepicker.css', false ,'1.0', 'all' );	
     wp_enqueue_style('bbwdstyle', get_template_directory_uri().'/css/bbwdstyle.css', false ,'1.0', 'all' );
     wp_enqueue_style('responsive', get_template_directory_uri().'/css/bootstrap-responsive.css', false, '1.0', 'all' );
   }     
@@ -55,6 +56,7 @@ add_action('wp_enqueue_scripts', 'bootstrapwp_css_loader');
 	wp_enqueue_script('collapse', get_template_directory_uri().'/js/bootstrap-collapse.js', array('jquery'),'1.0', true );        
 	wp_enqueue_script('carousel', get_template_directory_uri().'/js/bootstrap-carousel.js', array('jquery'),'1.0', true );    
 	wp_enqueue_script('typeahead', get_template_directory_uri().'/js/bootstrap-typeahead.js', array('jquery'),'1.0', true );
+	wp_enqueue_script('datepicker', get_template_directory_uri().'/js/bootstrap-datepicker.js', array('jquery'),'1.0', true );	
 	wp_enqueue_script('application', get_template_directory_uri().'/js/application.js', array('tooltip'),'1.0', true );
 	wp_enqueue_script('rollover', get_template_directory_uri().'/js/rollover.js', array('tooltip'),'1.0', true );
 	wp_enqueue_script('jquery', get_template_directory_uri().'/js/jquery.js', array('jquery'),'1.0', true );

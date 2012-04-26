@@ -23,13 +23,11 @@ get_header(); ?>
     </header>
     
 	<div class="row content">
-	<?php get_sidebar(); ?>
-	
       <div class="span8">
         <?php the_content();?>
         <?php endwhile; // end of the loop. ?>
-      </div><!-- .span8 -->          
-
+      </div><!-- .span8 -->
+	  	<?php get_sidebar(); ?>
 	</div><!-- row content -->
 	
 <?php get_footer(); ?>
