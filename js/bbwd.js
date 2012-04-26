@@ -7,6 +7,42 @@ jQuery(document).ready(function () {
 	}
 });
 
+// Intialize Datepicker
+jQuery(function(){
+	window.prettyPrint && prettyPrint();
+	jQuery('#dp1').datepicker({
+		format: 'mm-dd-yyyy'
+	});
+	jQuery('#dp2').datepicker();
+	jQuery('#dp3').datepicker();
+			
+			
+	var startDate = new Date(2012,1,20);
+	var endDate = new Date(2012,1,25);
+	jQuery('#dp4').datepicker()
+		.on('changeDate', function(ev){
+			if (ev.date.valueOf() > endDate.valueOf()){
+				jQuery('#alert').show().find('strong').text('The start date can not be greater then the end date');
+			} else {
+				jQuery('#alert').hide();
+				startDate = new Date(ev.date);
+				jQuery('#startDate').text(jQuery('#dp4').data('date'));
+			}
+			jQuery('#dp4').datepicker('hide');
+		});
+	jQuery('#dp5').datepicker()
+		.on('changeDate', function(ev){
+			if (ev.date.valueOf() < startDate.valueOf()){
+				jQuery('#alert').show().find('strong').text('The end date can not be less then the start date');
+			} else {
+				jQuery('#alert').hide();
+				endDate = new Date(ev.date);
+				jQuery('#endDate').text(jQuery('#dp5').data('date'));
+			}
+			jQuery('#dp5').datepicker('hide');
+		});
+});
+
 /*
 jQuery(document).ready(function () {
   jQuery(".accordion-heading a").mouseover(function() {	
