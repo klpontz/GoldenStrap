@@ -15,5 +15,3 @@
 ?>
 	</div><!--/.well .sidebar-nav -->
   </div><!-- /.span4 -->
-
-
