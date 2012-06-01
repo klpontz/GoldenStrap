@@ -107,7 +107,7 @@
 		place: function(){
 			var offset = this.component ? this.component.offset() : this.element.offset();
 			this.picker.css({
-				top: offset.top + this.height -50,
+				top: offset.top + this.height - 80,
 				left: offset.left
 			});
 		},
