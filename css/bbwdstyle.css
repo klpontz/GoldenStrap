@@ -407,8 +407,14 @@ select {
 .sidebar {
   width: 100%;
 }
+#teacherMain {
+  margin-left: 10px;
+}
 .teachers {
-  padding: 71px;
+  padding: 13px;
+}
+.teacher {
+  padding: 16px;
 }
 .schedule {
   padding: 22px 70px;
