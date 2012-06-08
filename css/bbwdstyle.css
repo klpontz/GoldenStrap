@@ -10,9 +10,6 @@ Like WordPress, this work is released under GNU General Public License, version 
 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 .
 */
-body {
-  margin-top: 58px;
-}
 p {
   color: #2c2017;
 }
@@ -435,6 +432,14 @@ select {
 }
 .sidebar {
   width: 100%;
+}
+#cimy_div_id_0 {
+  width: auto;
+  height: 240px;
+}
+#cimy_div_id_1 {
+  width: auto;
+  height: 240px;
 }
 #teacherMain {
   margin-left: 10px;
