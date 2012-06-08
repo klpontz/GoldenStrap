@@ -127,6 +127,30 @@ address {
   background-color: #414249;
   background-color: rgba(0, 0, 0, 0.5);
 }
+/* Application Link in Nav
+-------------------------------------------------- */
+#nav_application a {
+  float: none;
+  padding: 10px 10px 11px;
+  line-height: 19px;
+  color: #f2693e;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+#nav_application a:hover {
+  background-color: transparent;
+  color: #bcbbb4;
+  text-decoration: none;
+}
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover {
+  color: #f2693e;
+  text-decoration: none;
+  background-color: #414249;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .btn {
   color: #2c2017;
 }
@@ -339,7 +363,7 @@ a#login:hover {
   text-decoration: none;
 }
 .contact {
-  padding: 0px 0px 0px 28px;
+  padding: 0px 0px 0px 0px;
   margin-left: 0px;
 }
 .contactMessage {

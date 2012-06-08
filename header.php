@@ -43,6 +43,13 @@ get_header(); ?>
 		  <div class="nav-collapse collapse" style="height: 0px;">
           <?php wp_nav_menu( array( 'menu' => 'main-menu', 'container_class' => 'nav-collapse', 'menu_class' => 'nav', 'menu_id' => 'main-menu') ); ?>
           </div><!-- nav-collapse collapse -->
+		  
+		  <div id="nav_application" class="nav-collapse collapse pull-right">
+			<ul class="nav">
+			  <li><a href="http://localhost/sfie/?page_id=130">Application</a></li>
+		    </ul>
+		  </div>
+		  
 		</div>
       </div>
     </div>

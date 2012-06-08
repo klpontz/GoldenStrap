@@ -163,6 +163,7 @@ address {
   display: inline;
   line-height: 19px;
 }
+
 // Links
 .navbar .nav > li > a {
   float: none;
@@ -172,6 +173,7 @@ address {
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0,0,0,.25);
 }
+
 // Hover
 .navbar .nav > li > a:hover {
   background-color: transparent;
@@ -206,6 +208,7 @@ address {
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0,0,0,.25);
 }
+
 .navbar .current_page_item a {
   color: @white;
   padding: 13px 10px 13px;
@@ -216,16 +219,46 @@ address {
   background-color: @navbarBackground;
   background-color: rgba(0,0,0,.5);
 }
+
 // Hover for WordPress
 .navbar .page_item > a:hover {
   background-color: transparent;
   color: @navbarLinkColorHover;
   text-decoration: none;
 }
+
 // Active nav items for WordPress
 .navbar .current_page_item > a,
 .navbar .nav .current_page_item > a:hover {
   color: @orange;
+  text-decoration: none;
+  background-color: @navbarBackground;
+  background-color: rgba(0,0,0,.5);
+}
+
+/* Application Link in Nav
+-------------------------------------------------- */
+//Link
+#nav_application a {
+  float: none;
+  padding: 10px 10px 11px;
+  line-height: 19px;
+  color: @navbarLinkColorHover;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+//Hover
+#nav_application a:hover {
+  background-color: transparent;
+  color: @navbarLinkColor;
+  text-decoration: none;
+}
+// Active nav items
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover {
+  color: @navbarLinkColorHover;
   text-decoration: none;
   background-color: @navbarBackground;
   background-color: rgba(0,0,0,.5);
@@ -493,7 +526,7 @@ a#login:hover {
 // CONTACT FORM
 // _______________________________________________________________________________ \\
 .contact {
-  padding: 0px 0px 0px 28px;
+  padding: 0px 0px 0px 0px;
   margin-left:0px;
 }
 .contactMessage {
