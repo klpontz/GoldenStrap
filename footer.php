@@ -11,7 +11,8 @@
 ?>
 
     </div> <!-- /container -->
-      <footer class="foot">
+      
+	  <footer class="foot">
 		<div class="container">
 		  <div class="row">
 		    <div class="span4">
@@ -25,8 +26,9 @@
 		     </address>
 		   </div><!-- span -->
 		   <div class="span1 offset4">
-		     <a href="http://www.facebook.com/pages/San-Francisco-Institute-of-English/314325297056" target="_blank"><img class="socicon" src="http://www.winnersclubsf.com/wp-content/themes/goldenstrap/img/facebook.png" width="64px" height="64px" alt="Facebook Icon"></img></a>
+		     <a href="http://www.facebook.com/pages/San-Francisco-Institute-of-English/314325297056" target="_blank"><img class="socicon" src="http://www.winnersclubsf.com/wp-content/themes/goldenstrap/img/facebook.png" width="64" height="64" alt="Facebook Icon" /></a>
 		   </div><!-- span -->
+		   
 		   <div class="span3">
 		     <a class="btn applyBtn" href="http://www.winnersclubsf.com/application/">Apply Now</a>
 		   </div><!-- span -->
@@ -40,9 +42,9 @@
 		     <p>&#169; San Francisco Institute of English | Designed by BBWD</p>
 		   </div>
 		  </div><!-- row -->
-		
+	    </div><!-- container -->
 	  </footer>
-	</div><!-- container -->	
+	
 	
 <?php wp_footer(); ?> 
 <script type="text/javascript">
