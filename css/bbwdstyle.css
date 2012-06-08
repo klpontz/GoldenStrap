@@ -250,6 +250,7 @@ address {
   height: 380px;
   background-image: url('../img/ggb.jpg');
   text-align: right;
+  margin-top: 83px;
 }
 .hero-unit h1 {
   font-weight: bold;
@@ -264,7 +265,7 @@ address {
   background-image: url('../img/ggb.jpg');
   text-align: right;
   padding: 30px;
-  margin-top: 25px;
+  margin-top: 92px;
   margin-bottom: 32px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
