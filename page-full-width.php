@@ -1,4 +1,3 @@
-<!-- page-full-width -->
 <?php
 /**
  * Template Name: Full-width Page
@@ -10,6 +9,9 @@
  */
 
 get_header(); ?>
+
+<!-- page-full-width -->
+
 <?php while ( have_posts() ) : the_post(); ?>
 
    <div class="container">

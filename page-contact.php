@@ -1,4 +1,3 @@
-<!-- contact page -->
 <?php
 /**
  * Template Name: contact page
@@ -10,6 +9,9 @@
  */
 
 get_header(); ?>
+
+<!-- contact page -->
+
 <?php while ( have_posts() ) : the_post(); ?>
 
 <div class="container">

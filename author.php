@@ -1,4 +1,3 @@
-<!-- author -->
 <?php
 /**
  * The template for displaying Author Archive pages.
@@ -9,6 +8,8 @@
  */
 
 get_header(); ?>
+
+<!-- author -->
 
 <?php if ( have_posts() ) : ?>
 

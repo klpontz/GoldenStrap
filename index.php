@@ -1,4 +1,3 @@
-<!-- index -->
 <?php
 /**
  *
@@ -12,6 +11,9 @@
  * Last Revised: March 4, 2012
  */
 get_header(); ?>
+
+<!-- index -->
+
 <div class="container">
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?> 
   <header class="jumbotron masthead">

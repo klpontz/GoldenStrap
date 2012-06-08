@@ -1,4 +1,3 @@
-<!-- page-simple -->
 <?php
 /**
  * The template for displaying all pages.
@@ -13,6 +12,8 @@
  */
 
 get_header(); ?>
+
+<!-- page-simple -->
 
 <?php while ( have_posts() ) : the_post(); ?>
 
