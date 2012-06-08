@@ -22,7 +22,7 @@
 				San Francisco, CA 94121<br>
 				Phone: (415) 750-1755<br>
 				Fax: (415) 750-9939<br>
-				Email:  info@sfie.net</br>
+				Email:  info@sfie.net<br>
 		     </address>
 		   </div><!-- span -->
 		   <div class="span1 offset4">
