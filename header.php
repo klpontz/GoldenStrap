@@ -40,9 +40,9 @@ get_header(); ?>
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-		  <div class="nav-collapse collapse" style="height: 0px;">
+
           <?php wp_nav_menu( array( 'menu' => 'main-menu', 'container_class' => 'nav-collapse', 'menu_class' => 'nav', 'menu_id' => 'main-menu') ); ?>
-          </div><!-- nav-collapse collapse -->
+
 		  
 		  <div id="nav_application" class="nav-collapse collapse pull-right">
 			<ul class="nav">
