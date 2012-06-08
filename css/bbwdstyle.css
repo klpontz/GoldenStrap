@@ -434,6 +434,9 @@ select {
 .sidebar {
   width: 100%;
 }
+blockquote#sideBlock {
+  margin-top: 16px;
+}
 #cimy_div_id_0 {
   width: auto;
   height: 240px;
