@@ -42,14 +42,8 @@ get_header(); ?>
           <a class="brand" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 
           <?php wp_nav_menu( array( 'menu' => 'main-menu', 'container_class' => 'nav-collapse', 'menu_class' => 'nav', 'menu_id' => 'main-menu') ); ?>
-
-		  
-		  <div id="nav_application" class="nav-collapse collapse pull-right">
-			<ul class="nav">
-			  <li><a href="http://localhost/sfie/?page_id=130">Application</a></li>
-		    </ul>
-		  </div>
-		  
 		</div>
       </div>
+	  	<a id="nav_application" class="btn btn-info" href="http://localhost/sfie/?page_id=130">Application</a>
     </div>
+	

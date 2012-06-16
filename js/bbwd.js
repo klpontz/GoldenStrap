@@ -42,20 +42,3 @@ jQuery(function(){
 			jQuery('#dp5').datepicker('hide');
 		});
 });
-
-/*
-jQuery(document).ready(function () {
-  jQuery(".accordion-heading a").mouseover(function() {	
-	jQuery('.accordion-heading a').animate({color: '#f2693e' }, 630, "swing");
-  }).mouseout(function(){
-	 jQuery('.accordion-heading a').animate({color: '#2c2017'}, 800, "swing");
-  });
-});
-*/
-
-// Activate Tooltip
-/*
-jQuery(document).ready(function () {
-	jQuery('#csc').tooltip();
-});
-*/
