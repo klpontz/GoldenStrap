@@ -418,6 +418,9 @@ select {
   font-size: 20px;
   font-weight: lighter;
 }
+.homeStay {
+  list-style: none;
+}
 .sidebar {
   width: 100%;
 }
