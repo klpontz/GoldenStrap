@@ -1,11 +1,32 @@
-// Change Nav Position for WP Admin Nav
+// Change Nav Position when WP Admin Nav is present
 jQuery(document).ready(function () {
-  	var target = document.getElementById('wpadminbar');
-	if (target == undefined) {
-	  } else {
-		jQuery(".navbar").css("margin-top","28px");
+  	var tarOne = document.getElementById('wpadminbar');
+	if (tarOne == undefined) {
+	} else {
+  	  jQuery(".navbar").css("margin-top","28px");
 	}
 });
+
+
+// Change Nav Position when the Google Translate nav is present
+jQuery(document).ready(function () { 
+  jQuery("body").livequery("mousemove" , function(){
+    
+	var tarOne = jQuery(".goog-te-banner-frame").css("visibility"); 
+    var tarTwo = jQuery(".skiptranslate").css("display"); 
+
+	if (tarTwo === "none") {
+	  jQuery(".navbar").css("margin-top","0px");
+	  return
+    }
+
+    if (tarOne === "visible") {
+      jQuery(".navbar").css("margin-top","39px");
+	  return
+    }
+  })
+});
+
 
 // Intialize Datepicker
 jQuery(function(){

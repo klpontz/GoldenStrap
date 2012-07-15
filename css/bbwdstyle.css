@@ -435,6 +435,22 @@ blockquote#sideBlock {
   width: auto;
   height: 240px;
 }
+#text-7 {
+  margin-bottom: 15px;
+}
+#text-5 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+#text-2 {
+  margin-top: 15px;
+}
+.textwidget {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22.5px;
+  color: #2c2017;
+}
 #teacherMain {
   margin-left: 10px;
 }
@@ -452,4 +468,7 @@ hr.soften {
   margin: 54px 0;
   border: 0;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+}
+#google_translate_element {
+  float: right;
 }
