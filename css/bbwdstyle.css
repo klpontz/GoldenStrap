@@ -390,6 +390,22 @@ span.wpcf7-quiz-label {
 address#contact {
   font-size: 1.3em;
 }
+#cimy_div_id_2 {
+  width: auto;
+  height: 124px;
+}
+#cimy_div_id_3 {
+  width: auto;
+  height: 124px;
+}
+#cimy_div_id_4 {
+  width: auto;
+  height: 124px;
+}
+#cimy_div_id_5 {
+  width: auto;
+  height: 124px;
+}
 #app_form {
   margin-left: 0px;
   padding: 60px 80px 60px 80px;
@@ -450,6 +466,10 @@ blockquote#sideBlock {
   font-weight: 300;
   line-height: 22.5px;
   color: #2c2017;
+}
+.widget-title {
+  font-size: 2em;
+  line-height: 1em;
 }
 #teacherMain {
   margin-left: 10px;
